@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My Profile Contacts</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <main>
+        <section class="container">
+            <header>
+            <img src="images/profile01.png" alt="Foto do Perfil">
+            <div class="status"></div>
+            <h2 id="nome-usuario">Caio Sousa</h2>
+            </header>
+            <section class="buttons">
+            <a class="insta" href="#">
+                <img src="images/icone-instagram.svg">
+                <span>@CaioSousa</span>
+            </a>
+            <a class="linkedin" href="#">
+                <img src="images/icone-linkedin.svg">
+                <span>Caio Sousa</span>
+            </a>
+            <a class="zap" href="#">
+                <img src="images/icone-whatsapp.svg">
+                <span>(88) 9740.9602</span>
+            </a>
+            </section>
+            <section class="formulario">
+            <h3>Entre em contato via Formulário</h3>
+            <form>
+                <div class="grupo-input">
+                <label>Digite seu nome</label>
+                <input type="text">
+                </div>
+                <div class="grupo-input">
+                <label>Digite sua mensagem</label>
+                <textarea rows="10"></textarea>
+                </div>
+                <button>Enviar mensagem</button>
+            </form>
+            </section>
+        </section> <!-- fim do container -->
+        </main>
+        
+        <div id="customize">
+        <h3>Customize seu perfil</h3>
+        
+        <div>
+            <label>Digite o nome do usuário do perfil</label>
+            <input type="text" id="nome-perfil">
+        </div>
+    
+        <div>
+            <label>Escolha seu avatar</label>
+            <select id="avatar">
+            <option value="images/profile01.png">Avatar 01</option>
+            <option value="images/profile02.png">Avatar 02</option>
+            <option value="images/profile03.png">Avatar 03</option>
+            <option value="images/profile04.png">Avatar 04</option>
+            <option value="images/profile05.png">Avatar 05</option>
+            <option value="images/profile06.png">Avatar 06</option>
+            </select>
+        </div>
+    
+        <div>
+            <label>Defina o status do perfil</label>
+            <select id="status">
+            <option value="disponivel">Disponível</option>
+            <option value="ausente">Ausente</option>
+            <option value="indisponivel">Indisponível</option>
+            </select>
+        </div>
+    
+        <div>
+            <label>Digite seu @ do Instagram</label>
+            <input type="text" id="instagram">
+        </div>
+    
+        <div>
+            <label>Digite seu nome no Linkedin</label>
+            <input type="text" id="linkedin">
+        </div>
+    
+        <div>
+            <label>Digite seu numero do Whatsapp</label>
+            <input type="tel" id="whatsapp">
+        </div>
+    
+        <div>
+            <label>Mude a cor do background da página</label>
+            <input type="color" id="cor-fundo-pagina">
+        </div>
+    
+        <div>
+            <label>Mude a cor do background do perfil</label>
+            <input type="color" id="cor-fundo-perfil">
+        </div>
+    
+        <div>
+            <button id="aplicar">Aplicar alterações</button>
+        </div>
+        
+        </div> <!-- /div#customize -->
+    
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+    </html>
